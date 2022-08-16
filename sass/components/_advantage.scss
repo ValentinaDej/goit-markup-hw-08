@@ -1,0 +1,30 @@
+.advantage-list {
+  display: flex;
+  @include wraped(30px);
+}
+
+.advantage-list__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantage-group {
+  @include flex(center, center);
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--color-main-bgn);
+}
+
+.advantage-group__title {
+  margin-bottom: 10px;
+  line-height: 1.14;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.advantage-group__desc {
+  font-weight: 400;
+  line-height: 1.71;
+  color: var(--color-text-grey);
+}

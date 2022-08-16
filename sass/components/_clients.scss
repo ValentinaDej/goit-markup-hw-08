@@ -1,0 +1,25 @@
+.clients-list {
+  @include flex(center);
+  gap: 30px;
+}
+
+.clients-list__link {
+  @include flex(center, center);
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid var(--color-link-unacive);
+  color: var(--color-link-unacive);
+
+  transition: color var(--transformation-property), border-color var(--transformation-property);
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-accent);
+    border-color: var(--color-text-accent);
+  }
+}
+
+.clients-list__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,20 @@
+.logo {
+  font-family: var(--font-logo);
+  color: var(--color-text-accent);
+  font-size: 26px;
+  line-height: 1.2;
+  margin-right: 93px;
+  &:focus,
+  &:hover {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+
+.logo-part {
+  color: var(--color-text-black);
+}
+
+.footer-logo-part {
+  color: var(--color-text-white);
+}

@@ -1,0 +1,13 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__without-bottom {
+  padding-top: 94px;
+  padding-bottom: 0px;
+}
+
+.footer-section {
+  @include flex(flex-start, baseline);
+}
