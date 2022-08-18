@@ -3,27 +3,46 @@
 }
 
 .team__list {
-  display: flex;
-  gap: 30px;
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    @include wraped(30px);
+  }
 }
 
 .team-list-item {
-  flex-basis: calc((100% - 120px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color-text-white);
+
+  &:not(:last-child) {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .team-list-item__photo {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  @media screen and (min-width: 678px) {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .team-list-item__about {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .team-list-item__title {
@@ -43,3 +62,49 @@
   color: var(--color-text-grey);
   margin-bottom: 16px;
 }
+
+// .team {
+//   background-color: var(--color-main-bgn);
+// }
+
+// .team__list {
+//   display: flex;
+//   gap: 30px;
+// }
+
+// .team-list-item {
+//   flex-basis: calc((100% - 120px) / 4);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 0px 0px 4px 4px;
+//   background-color: var(--color-text-white);
+// }
+
+// .team-list-item__photo {
+//   display: block;
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// .team-list-item__about {
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+// }
+
+// .team-list-item__title {
+//   display: block;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.19;
+//   text-align: center;
+//   margin-bottom: 10px;
+// }
+
+// .team-list-item__desc {
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.19;
+//   text-align: center;
+//   color: var(--color-text-grey);
+//   margin-bottom: 16px;
+// }
