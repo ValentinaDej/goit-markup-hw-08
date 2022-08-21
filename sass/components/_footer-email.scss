@@ -1,40 +1,64 @@
-// .footer-email__title {
-//   color: var(--color-text-white);
-//   text-transform: uppercase;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.03em;
+.footer-email {
+  text-align: center;
+}
 
-//   margin-bottom: 20px;
-// }
+.footer-email__title {
+  color: var(--color-text-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 
-// .footer-email__group {
-//   display: flex;
-// }
+  margin-bottom: 20px;
+}
 
-// .email__input {
-//   width: 354px;
-//   padding-top: 14px;
-//   padding-bottom: 14px;
-//   padding-left: 16px;
-//   margin-right: 12px;
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
-//   border-radius: 4px;
+.email__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
 
-//   font-size: 16px;
-//   font-weight: 400;
-//   line-height: 1.25;
-//   letter-spacing: 0.03em;
-//   color: rgba(255, 255, 255, 0.6);
-//   background-color: var(--color-hero-bgn);
-// }
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 
-// .email__submit {
-//   @include flex(space-between, center);
-//   padding-left: 28px;
-//   padding-right: 28px;
-//   width: 200px;
-//   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-// }
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--color-hero-bgn);
+}
+
+.email__submit {
+  @include flex(space-between, center);
+  padding-left: 28px;
+  padding-right: 28px;
+  width: 200px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-email {
+    margin: 0 auto;
+  }
+  .email__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-email__group {
+    display: flex;
+  }
+  .email__input {
+    width: 354px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
+  .footer-email__title {
+    text-align: left;
+  }
+}

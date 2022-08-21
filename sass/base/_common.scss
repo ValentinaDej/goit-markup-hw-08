@@ -66,9 +66,6 @@ button {
   &:focus {
     background-color: var(--color-button-hover);
   }
-  @media screen and (min-width: 1200px) {
-    padding: 10px 32px;
-  }
 }
 
 .title {
@@ -76,8 +73,13 @@ button {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 30px;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 10px 32px;
+  }
+  .title {
     font-size: 36px;
     margin-bottom: 50px;
   }

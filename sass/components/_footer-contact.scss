@@ -1,38 +1,69 @@
-// .footer {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-//   background-color: var(--color-hero-bgn);
-// }
+.footer {
+  background-color: var(--color-hero-bgn);
+}
 
-// .footer-adress {
-//   margin-right: 70px;
-// }
+.footer-adress {
+  text-align: center;
+  margin-bottom: 60px;
+}
 
-// .adress {
-//   margin-top: 20px;
-//   font-style: normal;
-// }
+.adress {
+  margin-top: 20px;
+  font-style: normal;
+}
 
-// .footer-adress__list-item:not(:last-child) {
-//   margin-bottom: 9px;
-// }
+.footer-adress__location {
+  color: var(--color-text-white);
+  line-height: 1.71;
+  transition: color var(--transformation-property);
+  &:hover,
+  &:focus {
+    color: var(--color-text-accent);
+  }
+}
 
-// .footer-adress__location {
-//   color: var(--color-text-white);
-//   line-height: 1.71;
-//   transition: color var(--transformation-property);
-//   &:hover,
-//   &:focus {
-//     color: var(--color-text-accent);
-//   }
-// }
+.footer-adress__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  transition: color var(--transformation-property);
+  &:hover,
+  &:focus {
+    color: var(--color-text-accent);
+  }
+}
 
-// .footer-adress__contacts {
-//   color: rgba(255, 255, 255, 0.6);
-//   line-height: 1.71;
-//   transition: color var(--transformation-property);
-//   &:hover,
-//   &:focus {
-//     color: var(--color-text-accent);
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .footer_positsion {
+    @include flex(space-between, baseline);
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .footer-adress {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-adress {
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    text-align: left;
+    margin-right: 70px;
+  }
+  .footer-adress__list-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer_positsion {
+    @include flex(flex-start, baseline);
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+}

@@ -1,13 +1,19 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
-.footer-section {
-  @include flex(flex-start, baseline);
-}
+// .footer-section {
+//   @media screen and (min-width: 768px) {
+//     //тут опишемо
+//   }
+//   @media screen and (min-width: 1200px) {
+//     @include flex(flex-start, baseline);
+//   }
+// }
