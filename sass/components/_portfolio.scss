@@ -26,7 +26,9 @@
 }
 
 .portfolio__project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transformation-property);
   &:hover,
   &:focus {

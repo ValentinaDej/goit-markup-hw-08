@@ -523,7 +523,9 @@ button {
 }
 
 .portfolio__project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transformation-property);
 }
 .portfolio__project-card:hover, .portfolio__project-card:focus {
