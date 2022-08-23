@@ -23,8 +23,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
 
   background-color: var(--color-text-white);
@@ -81,6 +81,7 @@
 }
 
 .modal-container__desc {
+  width: 370px;
   font-family: var(--font-page);
   font-weight: 400;
   font-size: 12px;
@@ -158,7 +159,7 @@
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--color-text-grey);
@@ -180,5 +181,19 @@
     background-color: var(--color-text-accent);
     border-color: var(--color-text-accent);
     background-origin: border-box;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .modal-container__desc {
+    width: 448px;
+  }
+
+  .modal-container__check-label {
+    font-size: 14px;
   }
 }
