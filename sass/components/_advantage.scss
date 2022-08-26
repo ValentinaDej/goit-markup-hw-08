@@ -12,6 +12,7 @@
   line-height: 1.14;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantage-group__desc {
@@ -36,8 +37,8 @@
   .advantage-list__item {
     flex-basis: calc((100% - 30px) / 2);
   }
-  .advantage-group {
-    // width: 354px;
+  .advantage-group__title {
+    text-align: left;
   }
 }
 

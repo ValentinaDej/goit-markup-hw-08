@@ -67,6 +67,9 @@
     border-radius: 2px;
     margin-top: 1px;
   }
+  &.mobile-menu__list-menu-item-link_current {
+    color: var(--color-text-accent);
+  }
 }
 
 .mobile-menu__list-menu-item {

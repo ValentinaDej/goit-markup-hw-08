@@ -183,13 +183,17 @@
   }
 }
 
+.button_left-margin-auto {
+  padding: 10px 52px;
+}
+
 @media screen and (max-width: 479px) {
   .modal {
     width: 100%;
   }
 
   .modal-container__check-label {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .modal-container__check-label {
@@ -253,6 +257,11 @@
 }
 
 @media screen and (max-height: 479px) and (min-width: 768px) {
+  .modal {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 768px) {
   .modal {
     width: 768px;
   }
